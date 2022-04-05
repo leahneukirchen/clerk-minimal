@@ -1,0 +1,6 @@
+{:paths ["notebooks"]
+ :deps {io.github.nextjournal/clerk {:mvn/version "0.6.387"}}
+ :aliases
+ {:nextjournal/clerk
+  {:exec-fn nextjournal.clerk/build-static-app!
+   :exec-args {:paths ["notebooks/fourtytwo.clj"]}}}}
